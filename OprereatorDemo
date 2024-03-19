@@ -1,0 +1,37 @@
+package com.qincy.opreator;
+
+import java.awt.desktop.AboutEvent;
+import java.util.logging.XMLFormatter;
+
+public class OpereatorDemo3 {
+    public static void main(String[] args) {
+        //目标，掌握扩展赋值运算符大的使用。
+        //+=
+        double a = 1.5;
+        double b = 999;
+        a += b;  // a =（double）（a + b);
+        System.out.println(a);
+
+        int i = 10;
+        int j = 90;
+        i -= j;  // i = （double）（i - j）;
+        System.out.println(i);
+
+        int m =10;
+        int n =5;
+        //m *= n; // 等价形式；m = （int）（m * n）;
+        //m /= n; // 等价形式；m = （int）（m / n）;
+        m %= n;   // 等价形式；m = （int）（m % n）;
+        System.out.println(m);
+
+
+        System.out.println("-------------------------");
+
+        byte x = 10;
+        byte v = 20;
+        // x = x + v;  //编译错误;
+        // x =（byte）（x + v）;
+        x += v;
+        System.out.println(x);
+    }
+}
